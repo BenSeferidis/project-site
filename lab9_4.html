@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>lab9_2</title>
+	<script>
+		var visibility = true;
+		function Show(){
+			for(i = 0 ; i < document.images.length; i++)
+				document.getElementById("demo").innerHTML += 
+				document.images[i].src + "<br>";
+
+		}
+
+	</script>
+</head>
+<body>
+	<input onclick = "Show()" type="button" name="Text" value="Show" />
+	<p id="demo"></p>
+	<img src="1.jpg">
+	<p></p>
+	<img src="2.jpg">
+</body>
+</html>

@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+
+
+body  {
+  margin: 0;
+  color: white;
+}
+header {
+  background:black;
+  color: white;
+  padding: 8px 0px  6px 40px;
+  height: 60px;
+}
+
+header h1{
+  display: inline;
+  font-family: 'Poiret One', cursive;
+  font-weight: 400;
+  font-size: 32px;
+  float: left;
+  margin-top: 6px;
+  margin-right:50px;
+
+}
+
+nav ul{
+  display: inline;
+  padding: 0px;
+  float: left;
+}
+
+nav ul  li{
+  display:inline-block;
+  list-style-type: none;
+  color: white;
+  float: left;
+  margin-top: 5px;
+  margin-left: 50px;
+}
+
+nav ul  li a{
+  color: white;
+  text-decoration: none;
+
+}
+
+#nav {
+  font-family: 'Poiret One', cursive;
+}
+
+.homegrey{
+  background-color: grey;
+  padding: 50px 10px 27px 10px;
+}
+.divider{
+  background-color: grey;
+  height: 5px;
+}
+
+.homeblack:hover{
+  background-color:lightblue  ;
+  padding: 50px 10px 27px  10px;
+}
+
+
+
+
+slider{
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  position: absolute;
+}
+
+slider > * {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #1f1f1f;
+  animation: slide 12s infinite;
+}
+
+slide:nth-child(1){
+  left: 0%;
+  animation-delay: 0s;
+  background-image: url(1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(2){
+  animation-delay: 2s;
+  background-image: url(2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(3){
+  animation-delay: 4s;
+  background-image: url(3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+slide:nth-child(4){
+  animation-delay: 6s;
+  background-image: url(4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+
+slide p{
+  font-family: 'Poiret One', cursive;
+  font-size: 70px;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 340px;
+  color: #fff;
+}
+
+@@keyframes slide {
+  0%{left: 100%;width: 100%;}
+  5%{left: 0%;}
+  25%{left: 0%;}
+  30%{left:-100%;width: 100%;}
+  30.0001%{left: -100%;width:0%;}
+  100%{left: 100%;width: 0%;}
+
+}
